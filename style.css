@@ -1,0 +1,195 @@
+/* Added the main colors that will be used 
+throughout the whole site */
+:root {
+    --tornado: #5d5C61;
+    --grey: #379683;
+    --sky: #7395AE;
+    --ocean: #557A95;
+    --tan: #B1A296;
+    --white: #ffffff;
+    --black: #000000;
+    --alto: #d7d7d7;
+}
+
+.body  {
+    max-width: 1250px;
+    margin: 0;
+    font-family: OpenSans,sans-serif;
+    /* background-color: var(--tan); */
+}
+/* Note that I first made the site mobile friendly
+ and then added Media Queries to expand to Desktop */
+.header {
+    background-color: var(--ocean);
+    padding: 30px 0px 0px;
+}
+
+@media screen and (min-width: 768px){
+    .header {
+        padding: 40px 30px;
+    }
+}
+
+.header__home {
+    font-size: 24px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .header__home {
+        padding-bottom: 0;
+    }
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    .header__nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.header__link-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .header__link-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.header__link {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #5d5C61;
+    width: 100%;
+    display: block;
+    background-color: var(--tan);
+}
+
+.header__link:first-child {
+    border-top: 1px solid #5d5C61;
+    
+}
+
+@media screen and (min-width: 768px){
+    .header__link-wrapper {
+        width: 75%;
+    }
+}
+
+.section {
+    padding: 40px 25px;
+    background-color: var(--alto);
+}
+
+@media screen and (min-width: 768px){
+    .section {
+        padding: 80px 40px;
+    }
+}
+.section--hero {
+    background-image: url('hero-img-m.jpg');
+    color: var(--white);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 768px){
+    .section--hero {
+        background-image: url('hero-img-d.jpeg');
+        height: 200px;
+        background-position: left;
+    }
+}
+
+.section--hero .section__title-background {
+    background-color: rgba(115, 149, 174, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.section--hero .section__hero-title {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .section--hero .section__hero-title {
+        font-size: 26px;
+    }
+}
+
+.section__title {
+    font-size: 24px;
+    border-bottom: 2px solid var(--ocean);
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 768px){
+    .section__title {
+        border-bottom: none;
+        width: 18%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section {
+        display: flex;   
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section__content-wrapper {
+        margin-left: 30px;
+        border-left: 1px solid var(--ocean);
+        padding-left: 15px;
+    }
+}
+
+.footer {
+    background-color: var(--ocean);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__list-item {
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__list {
+        display: flex;
+        justify-content: center;
+    }
+}
