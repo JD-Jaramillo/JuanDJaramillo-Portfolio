@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JohnDJaramillo Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,23 +35,36 @@
 
     <section id="about-me" class="section section--about-me section--grey">
         <h2 class="section__title">About Me</h2>
-        <div class="section__content-wrapper">
-            <p class="section__content">content</p>
-            <p class="section__content section__content--yellow">content</p>
+        <div class="section__content-wrapper section__content-wrapper--about-me">
+            <img class="section__content-image" src="Profile2reduced.jpeg" alt="Profile Picture of John Jaramillo">
+            <p class="section__content-p">John is a passionate, curious, and diligent individual who is seeking a career
+                opportunity in web development. After spending over 5 years in the finance and business sector, he chose
+                to pivot his career to better leverage his problem solving and critical thinking abilities in his
+                career, and also in order to outsmart his wife (who is also a software engineer). Post self-teaching and
+                UNCC coding program John has experience in HTML, CSS, JavaScript, and Java. </p>
         </div>
     </section>
 
     <section id="work" class="section section--work section--grey">
         <h2 class="section__title">Work</h2>
-        <div class="section__content-wrapper">
-            <p class="section__content">content</p>
+        <div class="section__content-wrapper section__content-wrapper--work">
+            <a class="section__content-app-link" href="#App1">App1</a>
+            <a class="section__content-app-link" href="#App1">App2</a>
+            <a class="section__content-app-link" href="#App1">App3</a>
         </div>
     </section>
 
     <section id="contact" class="section section--contact section--grey">
         <h2 class="section__title">Contact Me</h2>
         <div class="section__content-wrapper">
-            <p class="section__content"> <a href="#App1"></a> content</p>
+            <div class="section__content-contactinfo">
+                <a href="tel:704-930-1580" class="section__content-cell">704-930-1580</a>
+                <a target="_blank" class="section__content-email"
+                    href="mailto:jaramillo784@gmail.com">Jaramillo784@gmail.com</a>
+                <a target="_blank" class="section__content-github" href="https://github.com/JD-Jaramillo">GitHub</a>
+                <a target="_blank" class="section__content-LinkedIn"
+                    href="https://www.linkedin.com/in/jmillo/">LinkedIn</a>
+            </div>
         </div>
 
     </section>
@@ -58,10 +72,12 @@
     <footer class="footer">
         <span>Created by John D Jaramillo</span>
         <ul class="footer__list">
-            <li class="footer__list-item"><a href="">GitHub</a></li>
-            <li class="footer__list-item"><a href="">LinkedIn</a></li>
+            <li class="footer__list-item"><a target="_blank" href="https://github.com/JD-Jaramillo"><i
+                        class="icon-github"></i>GitHub</a></li>
+            <li class="footer__list-item"><a target="_blank" href="https://www.linkedin.com/in/jmillo/">LinkedIn</a>
+            </li>
         </ul>
-        <span class="footer__copyright">Copyright 2021</span>
+        <span class="footer__copyright"> ️©️ Copyright 2021</span>
     </footer>
 
 </body>
