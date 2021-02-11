@@ -30,22 +30,10 @@ throughout the whole site */
     padding: 30px 0px 0px;
 }
 
-@media screen and (min-width: 768px){
-    .header {
-        padding: 40px 30px;
-    }
-}
-
 .header__home {
     font-size: 24px;
     color: var(--white);
     padding-bottom: 20px;
-}
-
-@media screen and (min-width: 768px){
-    .header__home {
-        padding-bottom: 0;
-    }
 }
 
 .header__nav {
@@ -56,14 +44,6 @@ throughout the whole site */
     justify-content: center;
 }
 
-@media screen and (min-width: 768px){
-    .header__nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-}
-
 .header__link-wrapper {
     display: flex;
     flex-direction: column;
@@ -71,13 +51,6 @@ throughout the whole site */
     align-items: center;
     width: 100%;
     text-align: center;
-}
-
-@media screen and (min-width: 768px){
-    .header__link-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
 
 .header__link {
@@ -236,16 +209,37 @@ throughout the whole site */
 }
 
 
-/* Adding GitHub logo(ion) to the left of the GitHub Link */
-.icon-github {
+/* Attempted to add GitHub logo(ion) to the left of the GitHub Link */
+/* .icon-github {
     background-image: url('icon-github.png');
     height: 10px;
     width: 10px;
     color: var(--black);
-}
+} */
 
 /* Moved all of the Media Queries to the bottom of the page 
 per suggestion of TA, so that they are the last to load */
+
+@media screen and (min-width: 768px){
+    .header {
+        padding: 40px 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header__home {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header__nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
 @media screen and (min-width: 768px){
     .section--hero .section__hero-title {
         font-size: 26px;
@@ -287,6 +281,8 @@ per suggestion of TA, so that they are the last to load */
 @media screen and (min-width: 768px){
     .header__link-wrapper {
         width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
