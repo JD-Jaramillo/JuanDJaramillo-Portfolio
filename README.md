@@ -16,7 +16,7 @@ John's Professional Portfolio
 
 Link to deployed portfolio:
 
-![JohnDJaramillo-Portfolio](imagehere)
+![JohnDJaramillo-Portfolio](finished-portfolio-screenshot.png)
 
 ## Requirements
 
@@ -39,7 +39,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 There is no need to install anything, to view the portfolio simply follow the link below. 
 
-Link: 
+See deployed site here: https://jd-jaramillo.github.io/JohnDJaramillo-Portfolio/
+
+See repository here: https://github.com/JD-Jaramillo/JohnDJaramillo-Portfolio
 
 ## Contributing
 

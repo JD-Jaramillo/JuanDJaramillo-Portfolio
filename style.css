@@ -38,7 +38,7 @@ throughout the whole site */
 
 .header__home {
     font-size: 24px;
-    color: white;
+    color: var(--white);
     padding-bottom: 20px;
 }
 
@@ -86,33 +86,32 @@ throughout the whole site */
     font-size: 16px;
     padding: 10px;
     text-decoration: none;
-    border-bottom: 1px solid #5d5C61;
-    width: 100%;
+    border-bottom: 1px solid var(--tornado);
+    width: 97%;
     display: block;
     background-color: var(--tan);
 }
 
-.header__link:first-child {
-    border-top: 1px solid #5d5C61;
-    
+.header__link:hover {
+    transition: .5s;
+    font-weight: 700;
+    text-shadow: 2px var(--sky);
+    color: var(--sky);
+    cursor: pointer;
+    background-color: var(--alto);
+    font-size: 18px;
 }
 
-@media screen and (min-width: 768px){
-    .header__link-wrapper {
-        width: 75%;
-    }
+.header__link:first-child {
+    border-top: 1px solid var(--tornado);
 }
+
 
 .section {
     padding: 40px 25px;
     background-color: var(--alto);
 }
 
-@media screen and (min-width: 768px){
-    .section {
-        padding: 80px 40px;
-    }
-}
 .section--hero {
     background-image: url('hero-img-m.jpg');
     color: var(--white);
@@ -122,16 +121,7 @@ throughout the whole site */
     padding-top: 100px;
 }
 
-
-@media screen and (min-width: 768px){
-    .section--hero {
-        background-image: url('hero-img-d.jpeg');
-        height: 200px;
-        background-position: left;
-        padding-top: 80px;
-    }
-}
-
+/* Used rgba here so that I could change the opacity in the hero */
 .section--hero .section__title-background {
     background-color: rgba(115, 149, 174, 0.7);
     padding: 20px;
@@ -141,15 +131,9 @@ throughout the whole site */
 }
 
 .section--hero .section__hero-title {
-    color: white;
+    color: var(--white);
     font-size: 20px;
     text-align: center;
-}
-
-@media screen and (min-width: 768px){
-    .section--hero .section__hero-title {
-        font-size: 26px;
-    }
 }
 
 .section__title {
@@ -161,32 +145,11 @@ throughout the whole site */
     text-align: center;
 }
 
-@media screen and (min-width: 768px){
-    .section__title {
-        border-bottom: none;
-        min-width: 18%;
-        text-align: left;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .section {
-        display: flex;   
-    }
-}
-
 .section__content-wrapper {
     display: flex;
     /* flex-wrap: wrap; */
     text-align: center;
     justify-content: center;
-}
-
-@media screen and (min-width: 768px){
-    .section__content-wrapper {
-        text-align: center;
-        width: 100%;
-    }
 }
 
 .section__content {
@@ -201,30 +164,10 @@ throughout the whole site */
     text-align: center;
     padding: 20px;
 }
-@media screen and (min-width: 768px) {
-    .section__content-wrapper .section__content-p  {
-        text-align: left;
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .section__content-wrapper {
-        margin-left: 30px;
-        border-left: 1px solid var(--ocean);
-        padding-left: 15px;
-    }
-}
 
 .section__content-wrapper--about-me {
     flex-direction: column;
     align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-    .section__content-wrapper--about-me {
-        flex-direction: row;
-    }
 }
 
 .section__content-wrapper--work {
@@ -233,26 +176,19 @@ throughout the whole site */
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 768px) {
-    .section__content-wrapper--work {
-        width: 78%;
-    }
-}
-
 .section__content-app-link {
     padding: 20px;
-    width: 30%;
-    border: 2px solid black;
+    width: 37%;
+    border: 2px solid var(--black);
     margin: 10px;
     min-height: 100px;
+    transition: all .2s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
-    .section__content-app-link {
-        width: 37%;
-    }
+.section__content-app-link:hover {
+    transform: scale(1.1) rotate(8deg);
+    box-shadow: 30px -12px var(--ocean);
 }
-
 
 .section__content-app-link:first-child {
     width: 100%;
@@ -283,13 +219,6 @@ throughout the whole site */
    cursor: pointer;
 }
 
-@media screen and (min-width:768px) {
-    .section__content-contactinfo {
-        display: inline-block;
-        box-sizing: border-box;
-    }
-}
-
 .footer {
     background-color: var(--ocean);
     padding: 20px;
@@ -306,12 +235,7 @@ throughout the whole site */
     padding: 10px;
 }
 
-@media screen and (min-width: 768px) {
-    .footer__list {
-        display: flex;
-        justify-content: center;
-    }
-}
+
 /* Adding GitHub logo(ion) to the left of the GitHub Link */
 .icon-github {
     background-image: url('icon-github.png');
@@ -319,3 +243,107 @@ throughout the whole site */
     width: 10px;
     color: var(--black);
 }
+
+/* Moved all of the Media Queries to the bottom of the page 
+per suggestion of TA, so that they are the last to load */
+@media screen and (min-width: 768px){
+    .section--hero .section__hero-title {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section--hero {
+        background-image: url('hero-img-d.jpeg');
+        height: 200px;
+        background-position: left;
+        padding-top: 80px;
+        
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section__title {
+        border-bottom: none;
+        min-width: 18%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section {
+        display: flex;  
+        padding: 80px 40px; 
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section__content-wrapper {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header__link-wrapper {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section__content-wrapper .section__content-p  {
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section__content-wrapper {
+        margin-left: 30px;
+        border-left: 1px solid var(--ocean);
+        padding-left: 15px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .section__content-wrapper--about-me {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 768px) {
+    .section__content-wrapper--work {
+        width: 78%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .section__content-app-link {
+        width: 37%;
+    }
+}
+@media screen and (min-width:768px) {
+    .section__content-contactinfo {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section__content-contactinfo a {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer__list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer__list-item {
+        padding: 10px;
+    }
+}
+
