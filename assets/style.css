@@ -10,7 +10,7 @@ throughout the whole site */
     --black: #000000;
     --alto: #d7d7d7;
 }
-/* When user selects/hihglights text on page the background color and color of the text is changed  */
+
 ::selection {
     background-color: var(--ocean);
     color: var(--alto);
@@ -86,7 +86,7 @@ throughout the whole site */
 }
 
 .section--hero {
-    background-image: url("/images/hero-img-m.jpg");
+    background-image: url('/images/hero-img-m.jpg');
     color: var(--white);
     height: 200px;
     background-repeat: no-repeat;
@@ -149,6 +149,16 @@ throughout the whole site */
     flex-wrap: wrap;
 }
 
+#Project1 {
+    background-image: url('/images/recipeandcocktailproject.png');
+}
+#Project2 {
+    background-image: url('/images/weatherdashboard.png');
+}
+#Project3 {
+    background-image: url('/images/coding-quiz-on-HTML.png');
+}
+
 .section__content-app-link {
     padding: 20px;
     width: 37%;
@@ -156,6 +166,7 @@ throughout the whole site */
     margin: 10px;
     min-height: 100px;
     transition: all .2s ease-in-out;
+    color: var(--sky);
 }
 
 .section__content-app-link:hover {
@@ -204,14 +215,15 @@ throughout the whole site */
     cursor: pointer;
 }
 
-.footer__list-item a:hover {
-    font-weight: 500;
+.footer__list a:hover {
+    font-weight: 700;
     text-shadow: var(--sky);
-    color: var(--sky);
+    color: var(--alto);
  }
 
 .footer__list-item {
     padding: 10px;
+
 }
 
 
@@ -254,10 +266,11 @@ per suggestion of TA, so that they are the last to load */
 
 @media screen and (min-width: 768px){
     .section--hero {
-        background-image: url('images/hero-img-d.jpeg');
+        background-image: url('/images/hero-img-d.jpeg');
         height: 200px;
         background-position: left;
         padding-top: 80px;
+        
     }
 }
 
