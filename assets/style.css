@@ -155,7 +155,8 @@ throughout the whole site */
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
-    padding-bottom: 75px;
+    padding-bottom: 100px;
+    
 }
 #Project2 {
     background-image: url('../images/weatherdashboard.png');
