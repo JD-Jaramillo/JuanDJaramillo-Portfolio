@@ -63,6 +63,7 @@ throughout the whole site */
     width: 97%;
     display: block;
     background-color: var(--tan);
+    transition:all .5s ease-in-out;
 }
 
 .header__link:hover {
@@ -86,7 +87,7 @@ throughout the whole site */
 }
 
 .section--hero {
-    background-image: url('/images/hero-img-m.jpg');
+    background-image: url('../images/hero-img-m.jpg');
     color: var(--white);
     height: 200px;
     background-repeat: no-repeat;
@@ -150,13 +151,21 @@ throughout the whole site */
 }
 
 #Project1 {
-    background-image: url('/images/recipeandcocktailproject.png');
+    background-image: url('../images/recipeandcocktailproject.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 75px;
 }
 #Project2 {
-    background-image: url('/images/weatherdashboard.png');
+    background-image: url('../images/weatherdashboard.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 #Project3 {
-    background-image: url('/images/coding-quiz-on-HTML.png');
+    background-image: url('../images/coding-quiz-on-HTML.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .section__content-app-link {
@@ -266,7 +275,7 @@ per suggestion of TA, so that they are the last to load */
 
 @media screen and (min-width: 768px){
     .section--hero {
-        background-image: url('/images/hero-img-d.jpeg');
+        background-image: url('../images/hero-img-d.jpeg');
         height: 200px;
         background-position: left;
         padding-top: 80px;

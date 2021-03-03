@@ -10,14 +10,14 @@ John's Professional Portfolio
 * [Contributing](#Contributing)
 
 ## HTML 
-Made an HTML page that accuratley and semanticly works for the portfolio that I was looking to create. 
+Made an HTML page that accurately and semanticly works for the portfolio that I was looking to create. 
 
 ## CSS 
 Added multiple styles to the CSS sheet to make the portfolio look like a modern, eye catching page that is responsive to all screen sizes. 
 
-Link to deployed portfolio:
+Link to deployed portfolio: [Deployed site](https://jd-jaramillo.github.io/JohnDJaramillo-Portfolio/)
 
-![JohnDJaramillo-Portfolio](finished-portfolio-screenshot.png)
+![JohnDJaramillo-Portfolio](/images/finished-portfolio-screenshot-screenshot.png)
 
 ## Requirements
 
@@ -40,9 +40,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 There is no need to install anything, to view the portfolio simply follow the link below. 
 
-See deployed site here: https://jd-jaramillo.github.io/JohnDJaramillo-Portfolio/
+See deployed site here: [Deployed site](https://jd-jaramillo.github.io/JohnDJaramillo-Portfolio/) 
 
-See repository here: https://github.com/JD-Jaramillo/JohnDJaramillo-Portfolio
+See repository here: [GitHub Repo](https://github.com/JD-Jaramillo/JohnDJaramillo-Portfolio);
 
 ## Contributing
 
