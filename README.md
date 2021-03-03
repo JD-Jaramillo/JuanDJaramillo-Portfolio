@@ -18,7 +18,7 @@ Added multiple styles to the CSS sheet to make the portfolio look like a modern,
 Link to deployed portfolio: [Deployed site](https://jd-jaramillo.github.io/JohnDJaramillo-Portfolio/)
 
 ![JohnDJaramillo-Portfolio](/images/newscreenshot1.png)
-![JohnDJaramillo-Portfolio](/images/newscreenshot2.png)
+![JohnDJaramillo-Portfolio](/images/newscreenshot3.png)
 
 ## Requirements
 
