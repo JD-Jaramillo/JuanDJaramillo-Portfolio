@@ -16,12 +16,15 @@ throughout the whole site */
     color: var(--alto);
 }
 
-.body  {
+.container {
     max-width: 1250px;
     margin: 0 auto;
+}
+
+.body  {
     font-family: OpenSans,sans-serif;
     line-height: 1.25;
-    /* background-color: var(--tan); */
+    background-color: var(--alto);
 }
 /* Note that I first made the site mobile friendly
  and then added Media Queries to expand to Desktop */
@@ -80,10 +83,15 @@ throughout the whole site */
     border-top: 1px solid var(--tornado);
 }
 
+.background-alto {
+    background-color: var(--alto);
+}
+
 
 .section {
     padding: 40px 25px;
-    background-color: var(--alto);
+    margin: 0 auto;
+    max-width: 1250px;
 }
 
 .section--hero {
@@ -102,6 +110,7 @@ throughout the whole site */
     border-radius: 5px;
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .section--hero .section__hero-title {
@@ -113,7 +122,6 @@ throughout the whole site */
 .section__title {
     font-size: 24px;
     border-bottom: 2px solid var(--ocean);
-    /* width: fit-content; */
     padding-bottom: 5px;
     margin-bottom: 15px;
     text-align: center;
@@ -121,7 +129,6 @@ throughout the whole site */
 
 .section__content-wrapper {
     display: flex;
-    /* flex-wrap: wrap; */
     text-align: center;
     justify-content: center;
 }
@@ -151,32 +158,43 @@ throughout the whole site */
 }
 
 #Project1 {
-    background-image: url('../images/recipeandcocktailproject.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    
+    height: 200px;
+    width: 100%;
+}
+
+#Project2, #Project3 {
+    max-height: 100px;
+    width: auto;
+}
+
+.project__h3 {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 20px;
 }
 #Project2 {
     background-image: url('../images/weatherdashboard.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 200px;
 }
 #Project3 {
     background-image: url('../images/coding-quiz-on-HTML.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 200px;
 }
 
 .section__content-app-link {
     padding: 20px;
-    width: 37%;
+    width: 100%;
     border: 2px solid var(--black);
     margin: 10px;
     min-height: 100px;
     transition: all .2s ease-in-out;
     color: var(--sky);
+    background-color: rgba(115, 149, 174, 0.7);
 }
 
 .section__content-app-link:hover {
@@ -236,17 +254,22 @@ throughout the whole site */
 
 }
 
-
-/* Attempted to add GitHub logo(ion) to the left of the GitHub Link */
-/* .icon-github {
-    background-image: url('icon-github.png');
-    height: 10px;
-    width: 10px;
-    color: var(--black);
-} */
-
 /* Moved all of the Media Queries to the bottom of the page 
 per suggestion of TA, so that they are the last to load */
+
+@media only screen and (min-width: 500px) {
+    #Project1 {
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #Project2, #Project3 {
+        max-height: 200px;
+        width: auto;
+    }
+}
 
 @media screen and (min-width: 768px){
     .header {
@@ -295,7 +318,7 @@ per suggestion of TA, so that they are the last to load */
 @media screen and (min-width: 768px){
     .section {
         display: flex;  
-        padding: 80px 40px; 
+        padding: 80px 40px 120px; 
     }
 }
 

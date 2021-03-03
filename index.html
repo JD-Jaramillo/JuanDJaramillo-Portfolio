@@ -13,51 +13,74 @@
 
 <body class="body">
     <header class="header">
-        <nav class="header__nav">
-            <div class="header__home">
-                John Jaramillo
-            </div>
-            <div class="header__link-wrapper">
-                <a class="header__link" href="#about-me">About Me</a>
-                <a class="header__link" href="#work">Work</a>
-                <a class="header__link" href="#contact">Contact Me</a>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="header__nav">
+                <div class="header__home">
+                    John Jaramillo
+                </div>
+                <div class="header__link-wrapper">
+                    <a class="header__link" href="#about-me">About Me</a>
+                    <a class="header__link" href="#work">Work</a>
+                    <a class="header__link" href="#contact">Contact Me</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section class="section section--hero">
-        <div class="section__title-background">
-            <h1 class="section__hero-title">A passionate guy looking to advance his career in the exciting field of
-                software
-                engineering</h1>
+    <section class="section--hero">
+        <div class="container">
+            <div class="section section__title-background">
+                <h1 class="section__hero-title">A passionate guy looking to advance his career in the exciting field of
+                    software
+                    engineering</h1>
+            </div>
         </div>
+
     </section>
 
-    <section id="about-me" class="section section--about-me section--grey">
-        <h2 class="section__title">About Me</h2>
-        <div class="section__content-wrapper section__content-wrapper--about-me">
-            <img class="section__content-image" src="images/Profile2reduced.jpeg"
-                alt="Profile Picture of John Jaramillo">
-            <p class="section__content-p">Full Stack Web Developer seeking a career opportunity in web development;
-                leveraging a background in financial and accounting analysis roles, as well as a project management
-                position. Recently received a Certificate in Web Development from the University of North Carolina.
-                Recognized for problem solving abilities and using future minded proactive strategies to be a high
-                contributing member of a team. John is a quick and eager learner who
-                is judicious, responsible, self-motivated, and a diligent worker. Looking to bring my positive attitude,
-                technical skills and soft skills to the table in order to add value to an organization while continuing
-                to learn and develop new technical knowledge and give back to the web development community.</p>
+    <section class="background-alto">
+        <div id="about-me" class="section section--about-me section--grey">
+            <h2 class="section__title">About Me</h2>
+            <div class="section__content-wrapper section__content-wrapper--about-me">
+                <img class="section__content-image" src="images/Profile2reduced.jpeg"
+                    alt="Profile Picture of John Jaramillo">
+                <p class="section__content-p">Full Stack Web Developer seeking a career opportunity in web development;
+                    leveraging a background in financial and accounting analysis roles, as well as a project management
+                    position. Recently received a Certificate in Web Development from the University of North Carolina.
+                    Recognized for problem solving abilities and using future minded proactive strategies to be a high
+                    contributing member of a team. John is a quick and eager learner who
+                    is judicious, responsible, self-motivated, and a diligent worker. Looking to bring my positive
+                    attitude,
+                    technical skills and soft skills to the table in order to add value to an organization while
+                    continuing
+                    to learn and develop new technical knowledge and give back to the web development community.</p>
+            </div>
         </div>
     </section>
 
     <section id="work" class="section section--work section--grey">
         <h2 class="section__title">Work</h2>
         <div class="section__content-wrapper section__content-wrapper--work">
-            <a id="Project1" class="section__content-app-link" target="_blank"
-                href="https://jd-jaramillo.github.io/Recipe-and-Cocktail-Suggester/"></a>
-            <a id="Project2" class="section__content-app-link" target="_blank"
-                href="https://jd-jaramillo.github.io/weather-dashboard/"></a>
-            <a id="Project3" class="section__content-app-link" target="_blank"
-                href="https://jd-jaramillo.github.io/coding-quiz-on-html/"></a>
+            <a class="section__content-app-link" target="_blank"
+                href="https://jd-jaramillo.github.io/Recipe-and-Cocktail-Suggester/">
+                <img id="Project1" src="images/recipeandcocktailproject.png"
+                    alt="image of search input for recipe and dropdown for cocktails">
+                <h3 class="project__h3">Project 3: Recipe and Cocktail Suggester</h3>
+            </a>
+            <a target="_blank" class="section__content-app-link"
+                href="https://jd-jaramillo.github.io/weather-dashboard/">
+                <div id="Project2">
+                </div>
+                <h3 class="project__h3">Project 2: Weather Dashboard App</h3>
+            </a>
+            <a target="_blank" class="section__content-app-link"
+                href="https://jd-jaramillo.github.io/coding-quiz-on-html/">
+                <div id="Project3">
+                </div>
+                <h3 class="project__h3">Project 1: HTML Coding Quiz</h3>
+            </a>
+
+
         </div>
     </section>
 
