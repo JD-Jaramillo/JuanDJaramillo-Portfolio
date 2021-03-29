@@ -1,5 +1,5 @@
 # JuanDJaramillo-Portfolio
-John's Professional Portfolio 
+Juan's Professional Portfolio 
 
 ## Table of Contents
 
