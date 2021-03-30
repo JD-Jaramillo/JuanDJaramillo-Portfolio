@@ -206,6 +206,10 @@ throughout the whole site */
     width: 100%;
     min-height: 150px;
 }
+.section__content-app-link:nth-child(2) {
+    width: 100%;
+    min-height: 150px;
+}
 
 .section__content-contactinfo {
     display: flex;
@@ -303,7 +307,6 @@ per suggestion of TA, so that they are the last to load */
         height: 200px;
         background-position: left;
         padding-top: 80px;
-        
     }
 }
 
