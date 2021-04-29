@@ -160,19 +160,36 @@ throughout the whole site */
 #Project1 {
     height: 200px;
     width: 100%;
+    margin-top: 10px;
 }
 
 #Project2, #Project3 {
     max-height: 100px;
     width: auto;
+    margin-top: 10px;
+}
+
+#Drawing {
+    width: 65%;
+    height: 75%;
+    margin-top: 10px;
 }
 
 .project__h3 {
-    color: #000000;
-    text-decoration: none;
+    color: var(--black);
     font-size: 24px;
     margin-top: 20px;
 }
+
+.link {
+    text-decoration: none;
+}
+
+.repo {
+    color: var(--black);
+    text-decoration: none;
+}
+
 #Project2 {
     background-image: url('../images/weatherdashboard.png');
     background-repeat: no-repeat;
@@ -198,7 +215,7 @@ throughout the whole site */
 }
 
 .section__content-app-link:hover {
-    transform: scale(1.1) rotate(8deg);
+    transform: scale(1.05) rotate(3deg);
     box-shadow: 30px -12px var(--ocean);
 }
 
@@ -207,6 +224,10 @@ throughout the whole site */
     min-height: 150px;
 }
 .section__content-app-link:nth-child(2) {
+    width: 100%;
+    min-height: 150px;
+}
+.section__content-app-link:nth-child(3) {
     width: 100%;
     min-height: 150px;
 }
@@ -243,8 +264,13 @@ throughout the whole site */
 
 .footer__list {
     list-style: none;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     cursor: pointer;
+}
+
+.footer-links {
+    color: var(--black);
+    text-decoration: none;
 }
 
 .footer__list a:hover {
@@ -255,13 +281,12 @@ throughout the whole site */
 
 .footer__list-item {
     padding: 10px;
-
 }
 
 /* Moved all of the Media Queries to the bottom of the page 
 per suggestion of TA, so that they are the last to load */
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 575px) {
     #Project1 {
         height: 300px;
         width: auto;
