@@ -87,7 +87,6 @@ throughout the whole site */
     background-color: var(--alto);
 }
 
-
 .section {
     padding: 40px 25px;
     margin: 0 auto;
@@ -305,7 +304,7 @@ per suggestion of TA, so that they are the last to load */
 
 @media only screen and (min-width: 575px) {
     .largeCard {
-        height: 300px;
+        height: 286px;
         width: auto;
     }
 }
